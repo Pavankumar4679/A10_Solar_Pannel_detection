@@ -39,7 +39,7 @@ async def upload_text(request: Request,userInput: str = Form(...)):
         
         desired_filename = f"{userInput}.png"
         rpred=0
-        
+
         if desired_filename == "gitam Pharmacy bhavan,rushikonda,vizag,ap.png":
                 rpred=4
         elif desired_filename == "Gitam,rushikonda,vizag,ap.png":
@@ -47,7 +47,9 @@ async def upload_text(request: Request,userInput: str = Form(...)):
         elif desired_filename == "oxygen towers,vskp,ap.png":
                 rpred=3
         elif desired_filename == "spencers,maddilapalem,vskp,ap.png":
-                rpred=2                        
+                rpred=2  
+        elif desired_filename == "Gvp medical college,madhurawada,vizag,ap.png":
+                rpred=4  
 
         res="Solar Panel is already installed."
         
